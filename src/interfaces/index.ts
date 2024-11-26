@@ -1,0 +1,2 @@
+
+export * from './equipo.interface'

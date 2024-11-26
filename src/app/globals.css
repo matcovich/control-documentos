@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  width: 100%; /* o cualquier otro valor */
+  height: 100%; /* o cualquier otro valor */
+  object-fit: cover; /* o object-fit: contain; */
+}
+
+body {
+}
+
+/* ===== Scrollbar CSS ===== */
+
+::-webkit-scrollbar {
+  scrollbar-width: thin;
+  width: 6px;
+  height: 4px;
+}
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border: 1px solid #454545;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #58b0f3;
+}
+::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border: 1px none #ffffff;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #;
+}
+::-webkit-scrollbar-track:active {
+  background: #424242;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+/* =====END Scrollbar CSS ===== */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded transition-all;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 hover:bg-gray-300 text-black py-2 px-4 rounded transition-all;
+}
