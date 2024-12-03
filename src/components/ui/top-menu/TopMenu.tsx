@@ -27,6 +27,11 @@ export const TopMenu = () => {
                     >
                         <span>Inicio</span>
                     </Link>
+                    <Link href="/dashboard"
+                    className={`hover:text-blue-400 hover:border-b-[0.5px] hover:border-blue-400 ${router === '/dashboard' ? 'border-b-[0.5px] border-slate-800 dark:border-white' : ''}`}
+                    >
+                        <span>Dashboard</span>
+                    </Link>
                     <Link href="auth/new-account"
                     className={`hover:text-blue-400 hover:border-b-[0.5px] hover:border-blue-400 ${router === '/auth/new-account' ? 'border-b-[0.5px] border-white' : ''}`}
                     >

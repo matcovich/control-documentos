@@ -12,4 +12,7 @@ export * from "./ui/themeswitch/Switchermini"
 // dashboard}
 export * from "./ui/dashboard/nav/NavDashboard"
 export * from "./ui/dashboard/sidebar/SidebarDashboard";
+export * from "./ui/dashboard/tabbars/TabBar";
+export * from "./ui/dashboard/widget/WidgetItem";
+export * from "./ui/dashboard/sidebar/LogoutButton"
 
